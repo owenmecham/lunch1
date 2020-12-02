@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:elements": "ng build --prod --output-hashing none --single-bundle true",
+    "serve:elements": "cd dist/lunch1 && static-server -c \"*\" -p 9080 --no-cache"
   },
   "private": true,
   "dependencies": {
